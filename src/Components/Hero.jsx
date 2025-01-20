@@ -1,9 +1,9 @@
 import profilepic from "../assets/perfil-photo.png";
-import { FaGithub, FaReact } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="mt-24 max-w-[1200px] mx-auto">
+    <div className="overflow-hidden mt-24 max-w-[1200px] mx-auto">
       {/* Container Principal */}
       <div className="md:flex md:items-center gap-6 px-4">
         {/* Texto de apresentação */}
@@ -17,20 +17,22 @@ const Hero = () => {
             excepcional, criando conexões únicas entre pessoas e experiências
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 p-4">
+
+        {/* Botões */}
+        <div className="flex sm:flex-row flex-col items-center justify-center gap-4 p-4 md:w-[500px] mx-auto">
           {/* Botão GitHub */}
-          <button className="bg-blue-500 text-white py-2 px-4 rounded-lg w-full sm:w-auto text-center flex items-center justify-center gap-2">
+          <button className="bg-[#00D8E0] text-white py-2 px-4 rounded-lg w-full sm:w-auto text-center flex items-center justify-center gap-2">
             <FaGithub className="text-xl" />
             GitHub
           </button>
 
           {/* Botão Contato */}
-          <button className="bg-green-500 text-white py-2 px-4 rounded-lg w-full sm:w-auto text-center flex items-center justify-center gap-2">
-          
+          <button className="border-2 border-[#00D8E0] text-[#00D8E0] py-2 px-4 rounded-lg w-full sm:w-auto text-center flex items-center justify-center gap-2">
             Contato
           </button>
         </div>
 
+        {/* Imagem de Perfil */}
         <div className="flex justify-center md:justify-end mt-6 md:mt-0">
           <img
             src={profilepic}
