@@ -1,19 +1,4 @@
 import profilepic from "../assets/perfil-photo.png";
-import ShinyEffect from "./ShinyEffect";
-import {
-  AiOutlineGithub,
-  AiOutlineInstagram,
-  AiOutlineLink,
-  AiOutlineLinkedin,
-} from "react-icons/ai";
-import {
-  DiCss3,
-  DiHtml5,
-  DiJavascript1,
-  DiNodejsSmall,
-  DiReact,
-} from "react-icons/di";
-import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
