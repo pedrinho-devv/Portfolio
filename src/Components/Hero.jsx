@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="overflow-hidden mt-24 max-w-[1200px] mx-auto">
+    <div className="mt-24 max-w-[1200px] mx-auto">
       {/* Container Principal */}
       <div className="md:flex md:items-center gap-6 px-4">
         {/* Texto de apresentação */}
