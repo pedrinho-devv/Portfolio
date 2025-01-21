@@ -1,4 +1,4 @@
-const ShinyEffect = ( left, right, top, size = '200vw') => {
+const ShinyEffect = ( left, right, top, size = '10vw') => {
 
   const positionStyles = {
     top: `${top}px`,
