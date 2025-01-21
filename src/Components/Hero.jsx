@@ -1,15 +1,15 @@
 import profilepic from "../assets/perfil-photo.png";
 import { FaGithub } from "react-icons/fa";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
+import { TypeAnimation } from 'react-type-animation';
 import {
   DiHtml5,
   DiCss3,
   DiJavascript1,
   DiReact,
 } from "react-icons/di";
-import { Helmet } from "react-helmet"; 
+import { Helmet } from "react-helmet";
 import { SiTailwindcss } from "react-icons/si";
-
 
 const Hero = () => {
   return (
@@ -34,11 +34,21 @@ const Hero = () => {
             transition={{ duration: 1 }}
             className="text-center md:text-left"
           >
-            <p className="text-[18px] text-gray-300 mt-7">Olá, eu sou</p>
-            <h1 className="text-[32px] sm:text-[52px] text-gray-200 font-bold leading-tight">
-              Programador <span className="text-[#00D8E0]">Front-End</span>.
+            <p className="text-[18px] text-gray-300 mt-5">Olá, eu sou</p>
+            <h1 className="text-[52px] sm:text-[59px] text-gray-200 font-bold leading-snug sm:leading-tight">
+              <TypeAnimation
+                sequence={[
+                  "Programador Front-End",
+                  1000,
+                  "UX/UI Designer",
+                  1000,
+                ]}
+                speed={50}
+                repeat={Infinity}
+                className="font-bold text-[#00D8E0] text-xl md:text-5xl italic mb-4"
+              />
             </h1>
-            <p className="text-[18px] text-gray-300 sm:mt-8">
+            <p className="text-[18px] text-gray-300 mt-4 sm:mt-8 leading-relaxed">
               Desenvolvo soluções digitais que unem design inovador e
               usabilidade excepcional, criando conexões únicas entre pessoas e
               experiências.
@@ -46,7 +56,7 @@ const Hero = () => {
           </motion.div>
 
           {/* Botões */}
-          <div className="flex sm:flex-row flex-col items-center justify-center gap-4 p-4 md:w-[500px] mx-auto">
+          <div className="sm:flex-row flex-col items-center justify-center gap-6 p-4 md:w-[500px] mx-auto mt-8">
             {/* Botão GitHub */}
             <a
               href="https://github.com/pedrinho-devv"
@@ -54,7 +64,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               aria-label="Acesse meu GitHub"
             >
-              <button className="bg-[#00D8E0] text-white py-2 px-4 rounded-lg w-full sm:w-auto text-center flex items-center justify-center gap-2 hover:scale-105 transition-transform duration-300">
+              <button className="bg-[#00D8E0] mt-3 text-white py-2 px-6 rounded-lg w-full sm:w-auto text-center flex items-center justify-center gap-2 hover:scale-105 transition-transform duration-300">
                 <FaGithub className="text-xl" />
                 GitHub
               </button>
@@ -62,7 +72,7 @@ const Hero = () => {
 
             {/* Botão Contato */}
             <a href="#contato" aria-label="Ir para seção de contato">
-              <button className="border-2 border-[#00D8E0] text-[#00D8E0] py-2 px-4 rounded-lg w-full sm:w-auto text-center flex items-center justify-center gap-2 hover:bg-[#00D8E0] hover:text-white transition-colors duration-300">
+              <button className="border-2 mt-4 border-[#00D8E0] text-[#00D8E0] py-2 px-6 rounded-lg w-full sm:w-auto text-center flex items-center justify-center gap-2 hover:bg-[#00D8E0] hover:text-white transition-colors duration-300">
                 Contato
               </button>
             </a>
