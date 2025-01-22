@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar.jsx";
 import Skills from "./Components/Skills.jsx";
 import Hero from "./Components/Hero.jsx";
 import Projetos from './Components/Projetos.jsx'
+import Sobre from "./Components/Sobre.jsx"
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -12,5 +13,6 @@ createRoot(document.getElementById("root")).render(
     <Hero />
     <Skills/>
     <Projetos/>
+    <Sobre/>
   </StrictMode>
 );
