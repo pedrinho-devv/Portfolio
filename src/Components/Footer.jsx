@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-row gap-6 text-gray-400 text-4xl">
           {/* Ícones com links de redes sociais */}
           <a
-            href="https://github.com"
+            href="https://github.com/pedrinho-devv"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
