@@ -19,7 +19,7 @@ const Footer = () => {
             <FaGithubSquare />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/pedrinho.dev?igsh=dHp1ZDcxZ3d2anIy"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
