@@ -5,7 +5,7 @@ const Contato = () => {
   return (
     <motion.div
       className="px-6 max-w-[1000px] mx-auto md:my-12"
-      id="contact"
+      id="contato"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}

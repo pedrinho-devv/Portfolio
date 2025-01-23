@@ -3,7 +3,7 @@ import profilepic from "../assets/photoabout.jpg";
 const About = () => {
     return (
       <section
-        id="skills"
+        id="about"
         className="w-full py-16 bg-gray-900 text-gray-200"
       >
         <div className="max-w-[1300px] mx-auto px-8">

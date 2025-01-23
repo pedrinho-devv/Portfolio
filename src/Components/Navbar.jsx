@@ -43,7 +43,7 @@ const Navbar = () => {
         </a>
         <ul className="hidden md:flex gap-12 z-10 cursor-pointer">
           <li>
-            <Link to="skills" smooth={true} offset={50} duration={500}>
+            <Link to="about" smooth={true} offset={50} duration={500}>
               Sobre Mim
             </Link>
           </li>
@@ -53,7 +53,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="contact" smooth={true} offset={50} duration={500}>
+            <Link to="contato" smooth={true} offset={50} duration={500}>
               Contato
             </Link>
           </li>
@@ -72,7 +72,7 @@ const Navbar = () => {
           <ul className="font-semibold text-4xl space-y-8 text-center text-white">
             <li>
               <Link
-                to="skills"
+                to="about"
                 onClick={closeNav}
                 smooth={true}
                 offset={50}
