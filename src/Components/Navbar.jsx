@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-scroll";
-import logo from "../assets/logomain.png";
+import logo from "../assets/logoPA.png";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
@@ -39,7 +39,7 @@ const Navbar = () => {
         text-xl items-center px-12 h-20"
       >
         <a href="#">
-          <img src={logo} alt="Logo" className="h-10 w-auto" />
+          <img src={logo} alt="Logo" className="h-14 w-auto" />
         </a>
         <ul className="hidden md:flex gap-12 z-10 cursor-pointer">
           <li>
