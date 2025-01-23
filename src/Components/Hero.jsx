@@ -83,7 +83,7 @@ const Hero = () => {
             <img
               src={profilepic}
               alt="Foto de perfil de Pedro Augusto, desenvolvedor Front-End"
-              className="w-[200px] h-[200px] object-cover mb-4 md:w-[400px] md:h-[400px] hover:scale-105 transition-transform duration-300"
+              className="w-[240px] h-[240px] object-cover mb-4 md:w-[400px] md:h-[400px] hover:scale-105 transition-transform duration-300"
             />
           </div>
         </div>
