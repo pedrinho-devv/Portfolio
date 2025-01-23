@@ -6,6 +6,7 @@ import Skills from "./Components/Skills.jsx";
 import Hero from "./Components/Hero.jsx";
 import Projetos from './Components/Projetos.jsx'
 import Sobre from "./Components/Sobre.jsx"
+import Contato from "./Components/contato.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -14,5 +15,6 @@ createRoot(document.getElementById("root")).render(
     <Skills/>
     <Projetos/>
     <Sobre/>
+    <Contato/>
   </StrictMode>
 );
