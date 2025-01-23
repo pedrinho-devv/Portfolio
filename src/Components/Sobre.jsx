@@ -1,4 +1,4 @@
-import profilepic from "../assets/perfil-photo.png";
+import profilepic from "../assets/about.png";
 
 const About = () => {
     return (
@@ -14,21 +14,21 @@ const About = () => {
               <img
                             src={profilepic}
                             alt="Foto de perfil de Pedro Augusto, desenvolvedor Front-End"
-                            className="w-[200px] h-[200px] object-cover mb-4 md:w-[400px] md:h-[400px] hover:scale-105 transition-transform duration-300"
+                            className="w-[300px] h-[300px] object-cover mb-4 md:w-[400px] md:h-[400px] hover:scale-105 transition-transform duration-300"
                           />
             </div>
   
             {/* Texto Sobre Mim */}
             <div className="text-center md:text-left space-y-4">
               <p className="text-lg leading-relaxed">
-                Olá! 👋 Sou <span className="font-semibold">Pedro Augusto</span>, um Desenvolvedor FullStack de 22 anos. 
+                Olá! 👋 Sou <span className="font-semibold">Pedro Augusto</span>, um Desenvolvedor Web de 20 anos. 
                 Moro em Pedro II, Piauí, e sou apaixonado por criar interfaces modernas 
                 e componentes reutilizáveis.
               </p>
               <p className="text-lg leading-relaxed">
                 Trabalho com tecnologias como <span className="font-semibold">React.js</span>, 
-                <span className="font-semibold"> Next.js</span>, <span className="font-semibold">JavaScript</span>, 
-                <span className="font-semibold"> TypeScript</span>, e muitas outras. Tenho um olhar atento para 
+                <span className="font-semibold"> HTML</span>, <span className="font-semibold">JavaScript</span>, 
+                <span className="font-semibold"> CSS</span>, e muitas outras. Tenho um olhar atento para 
                 detalhes de design e uma paixão por explorar soluções inovadoras.
               </p>
               <p className="text-lg leading-relaxed">
