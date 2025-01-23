@@ -39,20 +39,16 @@ const Skills = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-3xl font-bold mb-4 text-center">Skills</h2>
+        <h2 className="mt-44 text-3xl font-bold mb-4 text-center">Skills</h2>
         <p className="text-center mb-8">
-          I worked on various frontend projects. Check them{" "}
-          <a href="#" className="underline">
-            there
-          </a>
-          .
+          Minhas tecnologias mais usadas.
         </p>
 
         <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="border border-purple-900 p-6 rounded-lg bg-purple-900/20 shadow-lg w-full md:w-1/2"
+              className="border border-[#00D8E0] p-6 rounded-lg bg-[#032526] shadow-lg w-full md:w-1/2"
             >
               <h3 className="text-xl font-bold mb-4 text-center">
                 {skill.category}

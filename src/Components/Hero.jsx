@@ -1,15 +1,9 @@
 import profilepic from "../assets/perfil-photo.png";
 import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { TypeAnimation } from 'react-type-animation';
-import {
-  DiHtml5,
-  DiCss3,
-  DiJavascript1,
-  DiReact,
-} from "react-icons/di";
+import { TypeAnimation } from "react-type-animation";
 import { Helmet } from "react-helmet";
-import { SiTailwindcss } from "react-icons/si";
+
 
 const Hero = () => {
   return (
@@ -21,7 +15,7 @@ const Hero = () => {
           name="description"
           content="Desenvolvo soluções digitais inovadoras com design intuitivo e usabilidade excepcional."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="./assets/PAfavicon.svg" />
       </Helmet>
 
       <div className="mt-24 max-w-[1200px] mx-auto">
@@ -55,27 +49,29 @@ const Hero = () => {
             </p>
 
             {/* Botões */}
-            <div className="flex flex-col sm:flex-row items-center justify-start gap-6 p-4 mt-8">
-              {/* Botão GitHub */}
-              <a
-                href="https://github.com/pedrinho-devv"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Acesse meu GitHub"
-              >
-                <button className="bg-[#00D8E0] text-white py-2 px-6 rounded-lg text-center flex items-center justify-center gap-2 hover:scale-105 transition-transform duration-300">
-                  <FaGithub className="text-xl" />
-                  GitHub
-                </button>
-              </a>
+            <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-6 p-4 mt-8">
+  {/* Botão GitHub */}
+  <a
+    href="https://github.com/pedrinho-devv"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Acesse meu GitHub"
+    className="w-full sm:w-auto"
+  >
+    <button className="bg-[#00D8E0] text-white py-2 px-6 rounded-lg text-center flex items-center justify-center gap-2 hover:scale-105 transition-transform duration-300 w-full sm:w-auto">
+      <FaGithub className="text-xl" />
+      GitHub
+    </button>
+  </a>
 
-              {/* Botão Contato */}
-              <a href="#contato" aria-label="Ir para seção de contato">
-                <button className="border-2 border-[#00D8E0] text-[#00D8E0] py-2 px-6 rounded-lg text-center flex items-center justify-center gap-2 hover:bg-[#00D8E0] hover:text-white transition-colors duration-300">
-                  Contato
-                </button>
-              </a>
-            </div>
+  {/* Botão Contato */}
+  <a href="#contato" aria-label="Ir para seção de contato" className="w-full sm:w-auto">
+    <button className="border-2 border-[#00D8E0] text-[#00D8E0] py-2 px-6 rounded-lg text-center flex items-center justify-center gap-2 hover:bg-[#00D8E0] hover:text-white transition-colors duration-300 w-full sm:w-auto">
+      Contato
+    </button>
+  </a>
+</div>
+
           </motion.div>
 
           {/* Imagem de Perfil */}
@@ -88,41 +84,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      {/* Seção com Motion e Stack de Tecnologias */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5 }}
-        className="flex flex-col items-center py-24"
-      >
-        <p className="text-gray-200 text-xl md:text-2xl mb-6">
-          Minhas Habilidades
-        </p>
-        <div className="flex flex-row text-5xl sm:text-7xl justify-center items-center gap-6">
-          <DiHtml5
-            className="text-orange-600 hover:scale-110 transition-transform duration-300"
-            aria-label="HTML5"
-          />
-          <DiCss3
-            className="text-blue-600 hover:scale-110 transition-transform duration-300"
-            aria-label="CSS3"
-          />
-          <DiJavascript1
-            className="text-yellow-500 hover:scale-110 transition-transform duration-300"
-            aria-label="JavaScript"
-          />
-          <DiReact
-            className="text-blue-500 hover:scale-110 transition-transform duration-300"
-            aria-label="React"
-          />
-          <SiTailwindcss
-            className="text-teal-400 hover:scale-110 transition-transform duration-300"
-            aria-label="TailwindCSS"
-          />
-        </div>
-      </motion.div>
     </>
   );
 };
