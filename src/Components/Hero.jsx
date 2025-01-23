@@ -27,12 +27,12 @@ const Hero = () => {
       <div className="mt-24 max-w-[1200px] mx-auto">
         {/* Container Principal */}
         <div className="md:flex md:items-center gap-6 px-4 flex-col sm:flex-row">
-          {/* Texto de apresentação */}
+          {/* Texto e Botões */}
           <motion.div
             initial={{ opacity: 0, x: -200 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="text-center md:text-left"
+            className="text-center md:text-left md:w-1/2"
           >
             <p className="text-[18px] text-gray-300 mt-5">Olá, eu sou</p>
             <h1 className="text-[52px] sm:text-[59px] text-gray-200 font-bold leading-snug sm:leading-tight">
@@ -53,30 +53,30 @@ const Hero = () => {
               usabilidade excepcional, criando conexões únicas entre pessoas e
               experiências.
             </p>
+
+            {/* Botões */}
+            <div className="flex flex-col sm:flex-row items-center justify-start gap-6 p-4 mt-8">
+              {/* Botão GitHub */}
+              <a
+                href="https://github.com/pedrinho-devv"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Acesse meu GitHub"
+              >
+                <button className="bg-[#00D8E0] text-white py-2 px-6 rounded-lg text-center flex items-center justify-center gap-2 hover:scale-105 transition-transform duration-300">
+                  <FaGithub className="text-xl" />
+                  GitHub
+                </button>
+              </a>
+
+              {/* Botão Contato */}
+              <a href="#contato" aria-label="Ir para seção de contato">
+                <button className="border-2 border-[#00D8E0] text-[#00D8E0] py-2 px-6 rounded-lg text-center flex items-center justify-center gap-2 hover:bg-[#00D8E0] hover:text-white transition-colors duration-300">
+                  Contato
+                </button>
+              </a>
+            </div>
           </motion.div>
-
-          {/* Botões */}
-          <div className="sm:flex-row flex-col items-center justify-center gap-6 p-4 md:w-[500px] mx-auto mt-8">
-            {/* Botão GitHub */}
-            <a
-              href="https://github.com/pedrinho-devv"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Acesse meu GitHub"
-            >
-              <button className="bg-[#00D8E0] mt-3 text-white py-2 px-6 rounded-lg w-full sm:w-auto text-center flex items-center justify-center gap-2 hover:scale-105 transition-transform duration-300">
-                <FaGithub className="text-xl" />
-                GitHub
-              </button>
-            </a>
-
-            {/* Botão Contato */}
-            <a href="#contato" aria-label="Ir para seção de contato">
-              <button className="border-2 mt-4 border-[#00D8E0] text-[#00D8E0] py-2 px-6 rounded-lg w-full sm:w-auto text-center flex items-center justify-center gap-2 hover:bg-[#00D8E0] hover:text-white transition-colors duration-300">
-                Contato
-              </button>
-            </a>
-          </div>
 
           {/* Imagem de Perfil */}
           <div className="flex justify-center md:justify-end mt-6 md:mt-0">
