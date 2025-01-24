@@ -1,5 +1,5 @@
 import { FaGithubSquare, FaInstagram } from "react-icons/fa";
-import logo from "../assets/logoPA.png";
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
