@@ -8,8 +8,8 @@ import {
   DiGithubBadge,
 } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
-import { FaGit } from "react-icons/fa"; // Ícone do Git
-import { FiFigma } from "react-icons/fi"; // Ícone do Figma
+import { FaGit } from "react-icons/fa"; 
+import { FiFigma } from "react-icons/fi"; 
 
 const skills = [
   {
@@ -17,13 +17,13 @@ const skills = [
     technologies: [
       { name: "HTML", icon: <DiHtml5 className="text-orange-600" /> },
       { name: "CSS", icon: <DiCss3 className="text-blue-600" /> },
-      { name: "Tailwind", icon: <SiTailwindcss className="text-teal-500" /> }, // Ícone do Tailwind
+      { name: "Tailwind", icon: <SiTailwindcss className="text-teal-500" /> }, 
       { name: "Bootstrap", icon: <DiBootstrap className="text-purple-600" /> },
       { name: "JavaScript", icon: <DiJavascript1 className="text-yellow-500" /> },
       { name: "React", icon: <DiReact className="text-blue-500" /> },
-      { name: "Git", icon: <FaGit className="text-orange-500" /> }, // Ícone do Git
+      { name: "Git", icon: <FaGit className="text-orange-500" /> }, 
       { name: "GitHub", icon: <DiGithubBadge className="text-gray-600" /> },
-      { name: "Figma", icon: <FiFigma className="text-purple-500" /> }, // Ícone do Figma
+      { name: "Figma", icon: <FiFigma className="text-purple-500" /> }, 
     ],
   },
 ];
@@ -39,7 +39,7 @@ const Skills = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="mt-44 text-3xl font-bold mb-4 text-center">Skills</h2>
+        <h2 className="mt-44 text-3xl font-bold mb-4 text-center">Minhas Habilidades</h2>
         <p className="text-center mb-8">
           Minhas tecnologias mais usadas.
         </p>
