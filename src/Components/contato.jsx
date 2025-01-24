@@ -10,10 +10,10 @@ const Contato = () => {
 
     emailjs
       .sendForm(
-        "gmailmessage", // Substitua pelo seu Service ID
-        "template_au32bue", // Substitua pelo seu Template ID
+        "gmailmessage", 
+        "template_au32bue", 
         form.current,
-        "JgU3uQjN2uOrO07qT" // Substitua pelo seu Public Key
+        "JgU3uQjN2uOrO07qT" 
       )
       .then(
         () => {
