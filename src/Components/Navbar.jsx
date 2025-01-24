@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-scroll";
-import logo from "../assets/logo.png";
+import logo from "./assets/logo.png";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
