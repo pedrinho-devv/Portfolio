@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { Helmet } from "react-helmet";
 
-
 const Hero = () => {
   return (
     <>
@@ -49,29 +48,32 @@ const Hero = () => {
             </p>
 
             {/* Botões */}
-            <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-6 p-4 mt-8">
-  {/* Botão GitHub */}
-  <a
-    href="https://github.com/pedrinho-devv"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Acesse meu GitHub"
-    className="w-full sm:w-auto"
-  >
-    <button className="bg-[#00D8E0] text-white py-2 px-6 rounded-lg text-center flex items-center justify-center gap-2 hover:scale-105 transition-transform duration-300 w-full sm:w-auto">
-      <FaGithub className="text-xl" />
-      GitHub
-    </button>
-  </a>
+            <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-4 sm:gap-6 p-4 mt-8">
+              {/* Botão GitHub */}
+              <a
+                href="https://github.com/pedrinho-devv"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Acesse meu GitHub"
+                className="w-full sm:w-auto"
+              >
+                <button className="bg-[#00D8E0] text-white py-2 px-6 rounded-lg text-center flex items-center justify-center gap-2 hover:scale-105 transition-transform duration-300 w-full sm:w-auto">
+                  <FaGithub className="text-xl" />
+                  GitHub
+                </button>
+              </a>
 
-  {/* Botão Contato */}
-  <a href="#contato" aria-label="Ir para seção de contato" className="w-full sm:w-auto">
-    <button className="border-2 border-[#00D8E0] text-[#00D8E0] py-2 px-6 rounded-lg text-center flex items-center justify-center gap-2 hover:bg-[#00D8E0] hover:text-white transition-colors duration-300 w-full sm:w-auto">
-      Contato
-    </button>
-  </a>
-</div>
-
+              {/* Botão Contato */}
+              <a
+                href="#contato"
+                aria-label="Ir para seção de contato"
+                className="w-full sm:w-auto"
+              >
+                <button className="border-2 border-[#00D8E0] text-[#00D8E0] py-2 px-6 rounded-lg text-center flex items-center justify-center gap-2 hover:bg-[#00D8E0] hover:text-white transition-colors duration-300 w-full sm:w-auto">
+                  Contato
+                </button>
+              </a>
+            </div>
           </motion.div>
 
           {/* Imagem de Perfil */}
