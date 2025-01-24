@@ -1,7 +1,32 @@
-
+import{ useRef } from "react";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
 const Contato = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "gmailmessage", // Substitua pelo seu Service ID
+        "template_au32bue", // Substitua pelo seu Template ID
+        form.current,
+        "JgU3uQjN2uOrO07qT" // Substitua pelo seu Public Key
+      )
+      .then(
+        () => {
+          alert("Mensagem enviada com sucesso!");
+          form.current.reset(); // Limpa o formulário após o envio
+        },
+        (error) => {
+          console.error("Erro ao enviar mensagem:", error);
+          alert("Houve um problema ao enviar sua mensagem. Tente novamente.");
+        }
+      );
+  };
+
   return (
     <motion.div
       className="px-6 max-w-[1000px] mx-auto md:my-12"
@@ -24,8 +49,8 @@ const Contato = () => {
         </div>
 
         <motion.form
-          action="https://getform.io/f/placeYourEndpointHere"
-          method="POST"
+          ref={form}
+          onSubmit={sendEmail}
           className="max-w-6xl p-5 md:p-12"
           id="form"
           initial={{ opacity: 0 }}
@@ -39,23 +64,26 @@ const Contato = () => {
             type="text"
             id="name"
             placeholder="Digite seu nome ..."
-            name="name"
+            name="user_name"
             className="mb-2 w-full rounded-md border border-[#00D8E0] py-2 pl-2 pr-4"
+            required
           />
           <input
             type="email"
             id="email"
             placeholder="Digite seu Email ..."
-            name="email"
+            name="user_email"
             className="mb-2 w-full rounded-md border border-[#00D8E0] py-2 pl-2 pr-4"
+            required
           />
           <textarea
-            name="textarea"
+            name="message"
             id="textarea"
             cols="30"
             rows="4"
             placeholder="Escreva sua mensagem ..."
             className="mb-2 w-full rounded-md border border-[#00D8E0] py-2 pl-2 pr-4"
+            required
           />
           <button
             type="submit"
