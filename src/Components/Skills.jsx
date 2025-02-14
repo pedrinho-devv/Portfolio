@@ -24,7 +24,7 @@ const skills = [
       { name: "JavaScript", icon: <DiJavascript1 className="text-yellow-500" /> },
       { name: "React", icon: <DiReact className="text-blue-500" /> },
       { name: "Git", icon: <FaGit className="text-orange-500" /> }, 
-      { name: "GitHub", icon: <DiGithubBadge className="text-gray-600" /> },
+      { name: "GitHub", icon: <DiGithubBadge className="text-black" /> },
       { name: "Figma", icon: <FiFigma className="text-purple-500" /> }, 
       { name: "Next.js", icon: <TbBrandNextjs className="text-black dark:text-white" /> }
 

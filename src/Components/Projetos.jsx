@@ -69,7 +69,10 @@ const projects = [
 const Projetos = () => {
   return (
     <div className="max-w-[1000px] mx-auto p-6 md:my-20" id="portfolio">
-      <h2 className="text-3xl font-bold text-gray-200 mt-44 mb-8">Projetos</h2>
+      <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00D8E0] to-[#E1306C] mt-44 mb-8 relative">
+        Projetos
+      </h2>
+
       {projects.map((project, index) => (
         <motion.div
           key={index}
