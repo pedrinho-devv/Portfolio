@@ -33,8 +33,8 @@ const projects = [
       { icon: SiFigma, color: "text-purple-500" },
     ],
     links: {
-      site: "#",
-      github: "#",
+      site: "https://academia-landing-page-eight.vercel.app",
+      github: "https://github.com/pedrinho-devv/Pet-Landing-page",
     },
   },
   {
@@ -112,6 +112,7 @@ const Projetos = () => {
             <div className="flex space-x-4">
               <motion.a
                 href={project.links.site}
+                target="_blank"
                 className="flex items-center font-bold justify-center gap-3 px-5 py-2 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-lg font-semibold shadow-lg transition-all duration-300 hover:from-teal-500 hover:to-blue-500 hover:scale-105"
                 whileHover={{ scale: 1.1, rotate: 2 }}
                 whileTap={{ scale: 0.95 }}
