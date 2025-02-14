@@ -62,8 +62,8 @@ const projects = [
       { icon: SiFramer, color: "text-teal-500" },
     ],
     links: {
-      site: "#",
-      github: "#",
+      site: "https://portfolioaugustus.vercel.app",
+      github: "https://github.com/pedrinho-devv/Portfolio",
     },
   },
 ];
