@@ -1,24 +1,28 @@
-import{ useRef } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 const Contato = () => {
   const form = useRef();
+  const [isMessageSent, setIsMessageSent] = useState(false); // Adicionando estado para controlar a exibição da mensagem
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "gmailmessage", 
-        "template_au32bue", 
+        "gmailmessage",
+        "template_au32bue",
         form.current,
-        "JgU3uQjN2uOrO07qT" 
+        "JgU3uQjN2uOrO07qT"
       )
       .then(
         () => {
-          alert("Mensagem enviada com sucesso!");
+          setIsMessageSent(true); // Exibe a mensagem após o envio bem-sucedido
           form.current.reset(); // Limpa o formulário após o envio
+          setTimeout(() => {
+            setIsMessageSent(false); // Esconde a mensagem após 5 segundos
+          }, 5000);
         },
         (error) => {
           console.error("Erro ao enviar mensagem:", error);
@@ -91,6 +95,13 @@ const Contato = () => {
           >
             Enviar Mensagem
           </button>
+
+          {/* Exibindo a mensagem de sucesso */}
+          {isMessageSent && (
+            <p className="mt-4 text-center text-green-500 font-bold">
+              Email enviado com sucesso!
+            </p>
+          )}
         </motion.form>
       </div>
     </motion.div>
