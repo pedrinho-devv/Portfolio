@@ -48,7 +48,7 @@ const projects = [
     ],
     links: {
       site: "#",
-      github: "#",
+      github: "https://github.com/pedrinho-devv/DP-STUDIO",
     },
   },
   {
