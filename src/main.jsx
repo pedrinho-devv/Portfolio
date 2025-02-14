@@ -8,7 +8,6 @@ import Projetos from './Components/Projetos.jsx'
 import Sobre from "./Components/Sobre.jsx"
 import Contato from "./Components/contato.jsx";
 import Footer from "./Components/Footer.jsx";
-import Approach from "./Components/Aproach.jsx";
 
 
 
@@ -19,7 +18,7 @@ createRoot(document.getElementById("root")).render(
     <Skills/>
     <Projetos/>
     <Sobre/>
-    <Approach/>
+   
     <Contato/>
     <Footer/>
   </StrictMode>
