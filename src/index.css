@@ -43,3 +43,31 @@ body {
     z-index: -1; /* As partículas ficam atrás de todo o conteúdo */
   }
   
+
+  @keyframes walkingBorder {
+    0% {
+      border-color: transparent;
+      box-shadow: 0 0 5px #00D8E0, 0 0 10px #00D8E0, 0 0 15px #00D8E0, 0 0 20px #00D8E0;
+    }
+    25% {
+      border-color: #00D8E0;
+      box-shadow: 0 0 5px #E1306C, 0 0 10px #E1306C, 0 0 15px #E1306C, 0 0 20px #E1306C;
+    }
+    50% {
+      border-color: #E1306C;
+      box-shadow: 0 0 5px #00D8E0, 0 0 10px #00D8E0, 0 0 15px #00D8E0, 0 0 20px #00D8E0;
+    }
+    75% {
+      border-color: #00D8E0;
+      box-shadow: 0 0 5px #E1306C, 0 0 10px #E1306C, 0 0 15px #E1306C, 0 0 20px #E1306C;
+    }
+    100% {
+      border-color: transparent;
+      box-shadow: 0 0 5px #00D8E0, 0 0 10px #00D8E0, 0 0 15px #00D8E0, 0 0 20px #00D8E0;
+    }
+  }
+  
+  .animate-border {
+    animation: walkingBorder 2s infinite;
+  }
+  

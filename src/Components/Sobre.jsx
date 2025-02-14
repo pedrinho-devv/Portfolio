@@ -7,7 +7,7 @@ const About = () => {
         className="w-full py-16 bg-gray-900 text-gray-200"
       >
         <div className="max-w-[1300px] mx-auto px-8">
-        <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00D8E0] to-[#E1306C] mb-8 relative">
+        <h2 className="text-5xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00D8E0] to-[#E1306C] mb-8 relative">
         Sobre Mim
       </h2>
 

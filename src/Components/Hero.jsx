@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { Helmet } from "react-helmet";
 import { Particles } from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
+
 
 const Hero = () => {
   return (
@@ -76,8 +76,8 @@ const Hero = () => {
             transition={{ duration: 1 }}
             className="text-center md:text-left md:w-1/2"
           >
-            <p className="text-[18px] text-gray-300 mt-5">Olá, eu sou</p>
-            <h1 className="text-[52px] sm:text-[59px] text-gray-200 font-bold leading-snug sm:leading-tight">
+            <p className="text-[28px] text-gray-300 mt-5">Olá, eu sou</p>
+            <h1 className="text-[52px] sm:text-[59px] text-gray-200 font-bold mb-3 leading-snug sm:leading-tight">
               <TypeAnimation
                 sequence={[
                   "Programador Front-End",
@@ -87,7 +87,7 @@ const Hero = () => {
                 ]}
                 speed={50}
                 repeat={Infinity}
-                className="font-bold text-[#00D8E0] text-xl md:text-5xl italic mb-4"
+                className="font-bold text-[#00D8E0] text-xl md:text-5xl italic mb-1"
               />
             </h1>
             <p className="text-[18px] text-gray-300 mt-4 sm:mt-8 leading-relaxed">
