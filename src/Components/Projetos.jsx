@@ -2,17 +2,17 @@ import { motion } from "framer-motion";
 import project1 from "../assets/fit-mockup.jpg";
 import project2 from "../assets/pet-mockup.jpg";
 import project4 from "../assets/dp-mockup.jpg";
-import project5 from "../assets/pro4.png";
+import project5 from "../assets/p-mockup.jpg";
 import { AiOutlineGithub } from "react-icons/ai";
-import { DiReact, DiJavascript1 } from "react-icons/di";
-import { SiTailwindcss, SiNextdotjs, SiFigma } from "react-icons/si";
+import { DiReact } from "react-icons/di";
+import { SiTailwindcss, SiNextdotjs, SiFigma, SiFramer } from "react-icons/si";
 import { CiLocationArrow1 } from "react-icons/ci";
 
 const projects = [
   {
     img: project1,
     title: "E-commerce - VitalModas",
-    description: "UI for frontend development using React.",
+    description: "Uma interface de usuário (UI) para o desenvolvimento front-end usando React e Tailwind CSS, com foco na criação de uma experiência de e-commerce responsiva e moderna.",
     tech: [
       { icon: DiReact, color: "text-blue-500" },
       { icon: SiTailwindcss, color: "text-teal-500" },
@@ -26,7 +26,7 @@ const projects = [
   {
     img: project2,
     title: "Landing Page - PetShop",
-    description: "A fullstack application built with Node.js and MongoDB.",
+    description: "Uma aplicação front-end construída com Next.js e Tailwind CSS, projetada para exibir serviços de um pet shop, com uma landing page moderna e atrativa.",
     tech: [
       { icon: SiNextdotjs, color: "text-black dark:text-white" },
       { icon: SiTailwindcss, color: "text-teal-500" },
@@ -40,7 +40,7 @@ const projects = [
   {
     img: project4,
     title: "Landing Page - DP-Studio",
-    description: "An e-commerce platform with various features.",
+    description: "Uma plataforma de e-commerce construída com Next.js, Tailwind CSS e Figma, projetada para destacar os diversos serviços e produtos do DP-Studio.",
     tech: [
       { icon: SiNextdotjs, color: "text-black dark:text-white" },
       { icon: SiTailwindcss, color: "text-teal-500" },
@@ -53,11 +53,13 @@ const projects = [
   },
   {
     img: project5,
-    title: "Project #4",
-    description: "A mobile-friendly application using React Native.",
+    title: "Meu Portfólio",
+    description: "Um portfólio responsivo e amigável para dispositivos móveis, construído com React.js, exibindo meus projetos, habilidades e experiência como desenvolvedor web.",
     tech: [
       { icon: DiReact, color: "text-blue-500" },
-      { icon: DiJavascript1, color: "text-yellow-500" },
+      { icon: SiFigma, color: "text-purple-500" },
+      { icon: SiTailwindcss, color: "text-teal-500" },
+      { icon: SiFramer, color: "text-teal-500" },
     ],
     links: {
       site: "#",
@@ -65,6 +67,7 @@ const projects = [
     },
   },
 ];
+
 
 const Projetos = () => {
   return (

@@ -26,7 +26,7 @@ const Hero = () => {
         params={{
           particles: {
             color: {
-              value: "#ffffff"
+              value: "#00D8E0"
             },
             line_linked: {
               color: {
