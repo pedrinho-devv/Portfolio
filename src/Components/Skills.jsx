@@ -10,6 +10,8 @@ import {
 import { SiTailwindcss } from "react-icons/si";
 import { FaGit } from "react-icons/fa"; 
 import { FiFigma } from "react-icons/fi"; 
+import { TbBrandNextjs } from "react-icons/tb";
+
 
 const skills = [
   {
@@ -24,6 +26,8 @@ const skills = [
       { name: "Git", icon: <FaGit className="text-orange-500" /> }, 
       { name: "GitHub", icon: <DiGithubBadge className="text-gray-600" /> },
       { name: "Figma", icon: <FiFigma className="text-purple-500" /> }, 
+      { name: "Next.js", icon: <TbBrandNextjs className="text-black dark:text-white" /> }
+
     ],
   },
 ];

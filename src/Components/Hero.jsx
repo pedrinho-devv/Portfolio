@@ -3,6 +3,8 @@ import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { Helmet } from "react-helmet";
+import { Particles } from 'react-tsparticles';
+import { loadFull } from 'tsparticles';
 
 const Hero = () => {
   return (
@@ -17,8 +19,55 @@ const Hero = () => {
         <link rel="icon" href="./assets/PAfavicon.svg" />
       </Helmet>
 
-      <div className="mt-24 max-w-[1200px] mx-auto">
-        {/* Container Principal */}
+      {/* Componente de Partículas no fundo */}
+      <Particles
+        id="tsparticles"
+        options={{
+          particles: {
+            number: {
+              value: 50,
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+            },
+            shape: {
+              type: "circle",
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 5,
+                size_min: 0.1,
+              },
+            },
+            opacity: {
+              value: 0.5,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0.1,
+              },
+            },
+            move: {
+              enable: true,
+              speed: 3,
+              direction: "bottom",
+              random: true,
+              straight: false,
+              outModes: {
+                default: "out",
+              },
+            },
+          },
+        }}
+      />
+
+      {/* Conteúdo do Hero */}
+      <div className="mt-24 max-w-[1200px] mx-auto relative">
         <div className="md:flex md:items-center gap-6 px-4 flex-col sm:flex-row">
           {/* Texto e Botões */}
           <motion.div

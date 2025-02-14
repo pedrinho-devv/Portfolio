@@ -9,6 +9,7 @@ import Sobre from "./Components/Sobre.jsx"
 import Contato from "./Components/contato.jsx";
 import Footer from "./Components/Footer.jsx";
 
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Navbar />
