@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 import Particles from 'react-tsparticles';
 
 const Hero = () => {
+
   return (
     <>
       {/* Meta Tags para SEO */}

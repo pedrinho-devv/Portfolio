@@ -33,7 +33,6 @@ body {
     @apply text-cyan-900;
   }
 
-
   #tsparticles {
     position: absolute;
     top: 0;
@@ -42,4 +41,8 @@ body {
     height: 100%;
     z-index: -1; /* As partículas ficam atrás de todo o conteúdo */
   }
+<<<<<<< HEAD
  
+=======
+  
+>>>>>>> 9ffd48f321254eb27a0ca1c855665fcb947f77bf
