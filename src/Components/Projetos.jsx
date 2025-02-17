@@ -5,7 +5,7 @@ import project4 from "../assets/dp-mockup.jpg";
 import project5 from "../assets/p-mockup.jpg";
 import { AiOutlineGithub } from "react-icons/ai";
 import { DiReact } from "react-icons/di";
-import { SiTailwindcss, SiNextdotjs, SiFigma, SiFramer } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiFigma } from "react-icons/si";
 import { CiLocationArrow1 } from "react-icons/ci";
 import { FiMotion } from 'react-icons/fi';
 
