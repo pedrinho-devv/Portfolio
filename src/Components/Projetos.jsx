@@ -47,7 +47,7 @@ const projects = [
       { icon: SiFigma, color: "text-purple-500" },
     ],
     links: {
-      site: "#",
+      site: "https://dp-studiooficial.vercel.app",
       github: "https://github.com/pedrinho-devv/DP-STUDIO",
     },
   },
