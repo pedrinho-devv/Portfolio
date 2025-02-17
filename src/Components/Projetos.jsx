@@ -7,6 +7,7 @@ import { AiOutlineGithub } from "react-icons/ai";
 import { DiReact } from "react-icons/di";
 import { SiTailwindcss, SiNextdotjs, SiFigma, SiFramer } from "react-icons/si";
 import { CiLocationArrow1 } from "react-icons/ci";
+import { FiMotion } from 'react-icons/fi';
 
 const projects = [
   {
@@ -59,7 +60,7 @@ const projects = [
       { icon: DiReact, color: "text-blue-500" },
       { icon: SiFigma, color: "text-purple-500" },
       { icon: SiTailwindcss, color: "text-teal-500" },
-      { icon: SiFramer, color: "text-teal-500" },
+      { icon: FiMotion, color: "text-teal-500" },
     ],
     links: {
       site: "https://portfolioaugustus.vercel.app",
