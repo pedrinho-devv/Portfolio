@@ -3,12 +3,33 @@ import project1 from "../assets/fit-mockup.jpg";
 import project2 from "../assets/pet-mockup.jpg";
 import project4 from "../assets/dp-mockup.jpg";
 import project5 from "../assets/p-mockup.jpg";
+import project6 from "../assets/therapy-mockup.jpg";
 import { AiOutlineGithub } from "react-icons/ai";
 import { DiReact } from "react-icons/di";
-import { SiTailwindcss, SiNextdotjs, SiFigma } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiFigma, SiShadcnui } from "react-icons/si";
 import { CiLocationArrow1 } from "react-icons/ci";
 
 const projects = [
+
+  {
+    img: project6, // substitua com a imagem apropriada do novo projeto
+    title: "Your Mind In Peace",
+    description: "Uma landing page voltada para terapia e bem-estar mental, projetada para fornecer informações sobre serviços de terapia, promover o autocuidado e facilitar a conexão com profissionais da saúde mental.",
+    tech: [
+      { icon: DiReact, color: "text-blue-500" },
+      { icon: SiTailwindcss, color: "text-teal-500" },
+      { icon: SiShadcnui , color: "text-gray-500" }, 
+    ],
+    links: {
+      site: "https://therapy-landing-kappa.vercel.app",
+      github: "https://github.com/pedrinho-devv/Your-MindInPeace",
+    },
+  },
+  
+
+
+
+
   {
     img: project1,
     title: "E-commerce - VitalModas",
